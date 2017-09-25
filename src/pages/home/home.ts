@@ -106,6 +106,8 @@ export class HomePage {
 
   //Type Here
 
+  arrayLength = "This page contains " + this.cards.length + " cards.";
+
   //Make the favorite button work
   clickFav(card) {
     let index = this.cards.indexOf(card);
