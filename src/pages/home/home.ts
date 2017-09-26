@@ -100,13 +100,13 @@ export class HomePage {
     }
   ];
 
+  arrayLength = this.cards.length;
+
   constructor(public navCtrl: NavController) {
 
   }
 
   //Type Here
-
-  arrayLength = "This page contains " + this.cards.length + " cards.";
 
   //Make the favorite button work
   clickFav(card) {
@@ -134,5 +134,10 @@ export class HomePage {
     }
   }
 
+  //Delete the chosen card
+  deleteItem(card){
+    let index = this.cards.indexOf(card);
+    this.cards.splice(index, 1)
+  }
 
 }
