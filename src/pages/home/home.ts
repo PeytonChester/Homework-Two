@@ -138,6 +138,7 @@ export class HomePage {
   deleteItem(card){
     let index = this.cards.indexOf(card);
     this.cards.splice(index, 1)
+    this.arrayLength = this.cards.length;
   }
 
 }
